@@ -1,0 +1,38 @@
+.welcome
+  picture.welcome__picture
+    source(media='(max-width: 320px)', srcset='./img/bg01_320.jpg')
+    source(media='(max-width: 320px)', srcset='./img/bg01_320.webp')
+
+    source(media='(max-width: 480px)', srcset='./img/bg01_480.jpg')
+    source(media='(max-width: 480px)', srcset='./img/bg01_480.webp')
+
+    source(media='(max-width: 768px)', srcset='./img/bg01_768.jpg')
+    source(media='(max-width: 768px)', srcset='./img/bg01_768.webp')
+
+    source(media='(max-width: 1024px)', srcset='./img/bg01_1024.jpg')
+    source(media='(max-width: 1024px)', srcset='./img/bg01_1024.webp')
+
+    source(srcset='./img/bg01_1920.webp')
+    img(src='./img/bg01_1920.jpg').welcome__img
+      
+  .container.welcome__container
+    .welcome__content
+      h1.welcome__title Оффер сайта в 1-2 строки, который цепляет внимание человека
+      button.ui-btn.ui-btn_accent.welcome__btn Узнать стоимость
+
+  div.container.welcome__form
+    form.welcome__form-wrapper
+      .welcome__form-content
+        p.welcome__form-title Напишите сильный призыв к действию 
+        p.welcome__form-description Раскройте подробности призыва к действию, для ясности
+      .welcome__form-actions
+        .welcome__form-inputs
+          .ui-group.welcome__form-group
+            label(for="welcomeName").ui-group__label Ваше имя
+            input(id="welcomeName" placeholder="Имя").ui-group__input
+          .ui-group.welcome__form-group
+            label(for="welcomePhone").ui-group__label Ваш телефон
+            input(id="welcomePhone" type="number" placeholder="+7 (___) ___-__-__").ui-group__input
+        .welcome__form-rules 
+          p.welcome__form-rules-text Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных, а так же с политикой конфиденциальностит
+          button.ui-btn.ui-btn_accent.welcome__form-rulels-submit Получить консультацию

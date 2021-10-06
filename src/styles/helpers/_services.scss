@@ -1,0 +1,28 @@
+// Привелегированные классы
+.hide-576 {
+  display: inline-block;
+  @include media("<=576px") {
+    display: none !important;
+  }
+}
+
+.show-576 {
+  display: none !important;
+  @include media("<=576px") {
+    display: inline-block !important;
+  }
+}
+
+.hide-768 {
+  display: inline-block;
+  @include media("<=768px") {
+    display: none !important;
+  }
+}
+
+.show-768 {
+  display: none !important;
+  @include media("<=768px") {
+    display: inline-block !important;
+  }
+}
