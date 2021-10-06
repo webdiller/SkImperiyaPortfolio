@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-pug-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="container header-top__container">
+        <p class="header-top__text"> <span class="hide-768">Строительство каркасных и брусовых домов, бань по всей России</span><span class="show-768">Строительная компания «Империя»</span></p>
+        <div class="header-top__email">
+          <p class="header-top__email-title">Email:</p><a class="header-top__email-link" href="mailto:office-imperiya@mail.ru">office-imperiya@mail.ru</a>
+        </div>
+        <div class="header-top__socials">
+          <p class="header-top__socials-title">Мы в социальных сетях:</p>
+          <nav class="header-top__socials-items"> <a class="header-top__socials-item"><img class="header-top__socials-item-img" src="./img/svg/in.svg" alt="Мы в соцсетях"></a><a class="header-top__socials-item"><img class="header-top__socials-item-img" src="./img/svg/vk.svg" alt="Мы в соцсетях"></a><a class="header-top__socials-item"><img class="header-top__socials-item-img" src="./img/svg/yt.svg" alt="Мы в соцсетях"></a></nav>
+        </div>
+        <button class="header-top__menu-trigger"><img src="./img/svg/ico-menu.svg" alt="Открыть меню"></button>
+      </div>
+    </header>
+    <div class="header-middle">
+      <div class="container header-middle__container">
+        <div class="header-middle__left"><a class="header-middle__logo" href="/"><img class="header-middle__logo-img" src="./img/logo.png" alt="СК 'Империя'"></a><a class="header-middle__call" href="tel:88007079127"><span class="header-middle__call-title">8 (800) 707-91-27</span><span class="header-middle__call-text">Звонок бесплатный!</span></a>
+          <form class="header-middle__search">
+            <input class="ui-input header-middle__search-input" placeholder="Поиск по проектам">
+            <button class="ui-btn ui-btn_icon header-middle__search-btn"><img src="./img/svg/ico01.svg" alt="Поиск по проектам"></button>
+          </form>
+        </div>
+        <div class="header-middle__right">
+          <button class="ui-btn ui-btn_accent header-middle__right-btn">Заказать звонок</button>
+          <button class="ui-btn ui-btn_border header-middle__right-btn">Рассчитать проект</button>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav header-nav_desktop">
+      <div class="container header-nav__container">
+        <nav class="container header-nav__items"><a class="ui-item header-nav__item" href="#">Главная</a><span class="header-nav__item-separator"></span><a class="ui-item header-nav__item" href="#">Бани</a><span class="header-nav__item-separator"></span><a class="ui-item header-nav__item" href="#">Дом из бруса</a><span class="header-nav__item-separator"></span><a class="ui-item header-nav__item" href="#">Каркасные дома</a><span class="header-nav__item-separator"></span><a class="ui-item header-nav__item" href="#">О компании</a><span class="header-nav__item-separator"></span><a class="ui-item header-nav__item" href="#">Отзывы</a><span class="header-nav__item-separator"></span><a class="ui-item header-nav__item" href="#">Фотогалерея</a><span class="header-nav__item-separator"></span><a class="ui-item header-nav__item" href="#">Видеогалерея</a><span class="header-nav__item-separator"></span><a class="ui-item header-nav__item" href="#">Контакы </a></nav>
+      </div>
+    </div>
+    <div class="welcome">
+      <picture class="welcome__picture">
+        <source media="(max-width: 320px)" srcset="./img/bg01_320.jpg">
+        <source media="(max-width: 320px)" srcset="./img/bg01_320.webp">
+        <source media="(max-width: 480px)" srcset="./img/bg01_480.jpg">
+        <source media="(max-width: 480px)" srcset="./img/bg01_480.webp">
+        <source media="(max-width: 768px)" srcset="./img/bg01_768.jpg">
+        <source media="(max-width: 768px)" srcset="./img/bg01_768.webp">
+        <source media="(max-width: 1024px)" srcset="./img/bg01_1024.jpg">
+        <source media="(max-width: 1024px)" srcset="./img/bg01_1024.webp">
+        <source srcset="./img/bg01_1920.webp"><img class="welcome__img" src="./img/bg01_1920.jpg">
+      </picture>
+      <div class="container welcome__container">
+        <div class="welcome__content">
+          <h1 class="welcome__title">Оффер сайта в 1-2 строки, который цепляет внимание человека</h1>
+          <button class="ui-btn ui-btn_accent welcome__btn">Узнать стоимость</button>
+        </div>
+      </div>
+      <div class="container welcome__form">
+        <form class="welcome__form-wrapper">
+          <div class="welcome__form-content">
+            <p class="welcome__form-title">Напишите сильный призыв к действию </p>
+            <p class="welcome__form-description">Раскройте подробности призыва к действию, для ясности</p>
+          </div>
+          <div class="welcome__form-actions">
+            <div class="welcome__form-inputs">
+              <div class="ui-group welcome__form-group">
+                <label class="ui-group__label" for="welcomeName">Ваше имя</label>
+                <input class="ui-group__input" id="welcomeName" placeholder="Имя">
+              </div>
+              <div class="ui-group welcome__form-group">
+                <label class="ui-group__label" for="welcomePhone">Ваш телефон</label>
+                <input class="ui-group__input" id="welcomePhone" type="number" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="welcome__form-rules"> 
+              <p class="welcome__form-rules-text">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных, а так же с политикой конфиденциальностит</p>
+              <button class="ui-btn ui-btn_accent welcome__form-rulels-submit">Получить консультацию</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="container projects__container">
+        <p class="projects__title">Проекты в комплектации дача Плюс</p>
+        <div class="projects__items">
+          <div class="projects__item">
+            <picture class="projects__item-picture">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.webp">
+              <source srcset="./img/img03_320.webp"><img class="projects__item-img" src="./img/img03_320.jpg" alt="Проект лидер изображение дома">
+            </picture>
+            <div class="projects__item-data">
+              <div class="projects__item-top">
+                <div class="projects__item-info">
+                  <p class="projects__item-info-type">Каркасный дом:</p>
+                  <p class="projects__item-info-name">проект Лидер с террасой</p>
+                </div>
+                <div class="projects__item-values">
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-inner.svg"><span class="projects__item-value-text">7х10</span></div>
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-outer.svg"><span class="projects__item-value-text">109 м2</span></div>
+                </div>
+              </div>
+              <div class="projects__item-bottom">
+                <p class="projects__item-price">от <strong>1 269 000</strong> рублей</p>
+              </div><a class="ui-btn ui-btn_accent ui-btn_round projects__item-link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="projects__item">
+            <picture class="projects__item-picture">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.webp">
+              <source srcset="./img/img03_320.webp"><img class="projects__item-img" src="./img/img03_320.jpg" alt="Проект лидер изображение ">
+            </picture>
+            <div class="projects__item-data">
+              <div class="projects__item-top">
+                <div class="projects__item-info">
+                  <p class="projects__item-info-type">Каркасный дом:</p>
+                  <p class="projects__item-info-name">проект Лидер с террасой</p>
+                </div>
+                <div class="projects__item-values">
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-inner.svg"><span class="projects__item-value-text">7х10</span></div>
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-outer.svg"><span class="projects__item-value-text">109 м2</span></div>
+                </div>
+              </div>
+              <div class="projects__item-bottom">
+                <p class="projects__item-price">от <strong>1 269 000</strong> рублей</p>
+              </div><a class="ui-btn ui-btn_accent ui-btn_round projects__item-link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="projects__item">
+            <picture class="projects__item-picture">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.webp">
+              <source srcset="./img/img03_320.webp"><img class="projects__item-img" src="./img/img03_320.jpg" alt="Проект лидер изображение ">
+            </picture>
+            <div class="projects__item-data">
+              <div class="projects__item-top">
+                <div class="projects__item-info">
+                  <p class="projects__item-info-type">Каркасный дом:</p>
+                  <p class="projects__item-info-name">проект Лидер с террасой</p>
+                </div>
+                <div class="projects__item-values">
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-inner.svg"><span class="projects__item-value-text">7х10</span></div>
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-outer.svg"><span class="projects__item-value-text">109 м2</span></div>
+                </div>
+              </div>
+              <div class="projects__item-bottom">
+                <p class="projects__item-price">от <strong>1 269 000</strong> рублей</p>
+              </div><a class="ui-btn ui-btn_accent ui-btn_round projects__item-link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="projects__item">
+            <picture class="projects__item-picture">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.webp">
+              <source srcset="./img/img03_320.webp"><img class="projects__item-img" src="./img/img03_320.jpg" alt="Проект лидер изображение ">
+            </picture>
+            <div class="projects__item-data">
+              <div class="projects__item-top">
+                <div class="projects__item-info">
+                  <p class="projects__item-info-type">Каркасный дом:</p>
+                  <p class="projects__item-info-name">проект Лидер с террасой</p>
+                </div>
+                <div class="projects__item-values">
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-inner.svg"><span class="projects__item-value-text">7х10</span></div>
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-outer.svg"><span class="projects__item-value-text">109 м2</span></div>
+                </div>
+              </div>
+              <div class="projects__item-bottom">
+                <p class="projects__item-price">от <strong>1 269 000</strong> рублей</p>
+              </div><a class="ui-btn ui-btn_accent ui-btn_round projects__item-link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="projects__item">
+            <picture class="projects__item-picture">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.webp">
+              <source srcset="./img/img03_320.webp"><img class="projects__item-img" src="./img/img03_320.jpg" alt="Проект лидер изображение ">
+            </picture>
+            <div class="projects__item-data">
+              <div class="projects__item-top">
+                <div class="projects__item-info">
+                  <p class="projects__item-info-type">Каркасный дом:</p>
+                  <p class="projects__item-info-name">проект Лидер с террасой</p>
+                </div>
+                <div class="projects__item-values">
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-inner.svg"><span class="projects__item-value-text">7х10</span></div>
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-outer.svg"><span class="projects__item-value-text">109 м2</span></div>
+                </div>
+              </div>
+              <div class="projects__item-bottom">
+                <p class="projects__item-price">от <strong>1 269 000</strong> рублей</p>
+              </div><a class="ui-btn ui-btn_accent ui-btn_round projects__item-link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="projects__item">
+            <picture class="projects__item-picture">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 320px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 480px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 768px)" srcset="./img/img03_320.webp">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.jpg">
+              <source media="(max-width: 1024px)" srcset="./img/img03_320.webp">
+              <source srcset="./img/img03_320.webp"><img class="projects__item-img" src="./img/img03_320.jpg" alt="Проект лидер изображение ">
+            </picture>
+            <div class="projects__item-data">
+              <div class="projects__item-top">
+                <div class="projects__item-info">
+                  <p class="projects__item-info-type">Каркасный дом:</p>
+                  <p class="projects__item-info-name">проект Лидер с террасой</p>
+                </div>
+                <div class="projects__item-values">
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-inner.svg"><span class="projects__item-value-text">7х10</span></div>
+                  <div class="projects__item-value"><img class="projects__item-value-icon" src="./img/svg/icon-outer.svg"><span class="projects__item-value-text">109 м2</span></div>
+                </div>
+              </div>
+              <div class="projects__item-bottom">
+                <p class="projects__item-price">от <strong>1 269 000</strong> рублей</p>
+              </div><a class="ui-btn ui-btn_accent ui-btn_round projects__item-link" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__show-more">
+          <button class="ui-btn ui-btn_arrow projects__show-more-btn">Показать еще<span>   <img src="./img/svg/icon-arrow.svg" alt="Показать еще иконка"></span></button>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+  </body>
+</html>
