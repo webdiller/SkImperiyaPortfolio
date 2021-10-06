@@ -1,0 +1,305 @@
+.welcome-alt {
+  position: relative;
+
+  @include media("<=1200px") {
+  }
+  @include media("<=991px") {
+  }
+  @include media("<=768px") {
+  }
+  @include media("<=480px") {
+  }
+
+  &__picture {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__container {
+    position: relative;
+    padding-top: 127px;
+    margin-top: 16px;
+    @include media("<=1200px") {
+      padding-top: 148px;
+    }
+    @include media("<=991px") {
+      padding-top: 80px;
+    }
+    @include media("<=768px") {
+      padding-top: 77px;
+    }
+    @include media("<=480px") {
+      padding-top: 56px;
+    }
+  }
+
+  &__content {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__title {
+    max-width: 690px;
+    margin-bottom: 32px;
+
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    color: #3e1d1d;
+    @include media("<=1200px") {
+      max-width: 511px;
+      font-size: 3.6rem;
+    }
+    @include media("<=991px") {
+      max-width: 408px;
+      font-size: 2.8rem;
+      margin-bottom: 24px;
+    }
+    @include media("<=768px") {
+      max-width: 340px;
+      font-size: 2.4rem;
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__btn {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% - (245px / 2));
+
+    @include media("<=1200px") {
+      top: calc(100% - (311px / 2));
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+      top: calc(100% - 90px);
+    }
+    @include media("<=480px") {
+      top: calc(100% - 83px);
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+
+    height: 245px;
+    width: 100%;
+    min-height: 245px;
+    height: auto;
+    padding: 48px;
+    border-radius: 8px;
+
+    background-color: #fff;
+    box-shadow: 0px 20px 40px rgba(82, 82, 82, 0.08),
+      0px 7.7037px 12.7407px rgba(82, 82, 82, 0.0485926),
+      0px 1.62963px 3.25926px rgba(82, 82, 82, 0.0314074);
+
+    @include media("<=1200px") {
+      padding: 62px 40px;
+    }
+    @include media("<=991px") {
+      display: block;
+      padding: 40px 84px;
+      min-height: 311px;
+    }
+    @include media("<=768px") {
+      padding: 32px;
+    }
+    @include media("<=480px") {
+      padding: 24px 20px;
+    }
+  }
+
+  &__form-content {
+    max-width: 336px;
+    margin-right: auto;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+      max-width: unset;
+      margin-right: 0;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__form-title {
+    margin-bottom: 12px;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 120%;
+    color: #3e1d1d;
+    @include media("<=1200px") {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+    @include media("<=991px") {
+      font-size: 2.4rem;
+    }
+    @include media("<=768px") {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+    @include media("<=480px") {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__form-description {
+    font-size: 1.8rem;
+    line-height: 120%;
+    color: #3e1d1d;
+    @include media("<=1200px") {
+      font-size: 1.6rem;
+    }
+    @include media("<=991px") {
+      font-size: 1.2rem;
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__form-actions {
+    flex: 0 1 666px;
+    @include media("<=1200px") {
+      flex: 0 1 558px;
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__form-inputs {
+    display: flex;
+    margin-bottom: 16px;
+    @include media("<=1200px") {
+      margin-bottom: 13px;
+    }
+    @include media("<=991px") {
+      margin-bottom: 11px;
+    }
+    @include media("<=768px") {
+      margin-bottom: 16px;
+      flex-direction: column;
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__form-group {
+    flex: 1;
+    &:not(:last-child) {
+      margin-right: 16px;
+      @include media("<=768px") {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__form-rules {
+    display: flex;
+    align-items: center;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__form-rules-text {
+    font-size: 1.4rem;
+    line-height: 120%;
+    color: #8c8c8c;
+    margin-right: auto;
+    max-width: 325px;
+    @include media("<=1200px") {
+      max-width: 287px;
+      font-size: 1.2rem;
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+      text-align: center;
+      margin: 0;
+      max-width: 376px;
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__form-rulels-submit {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+      margin-bottom: 20px;
+    }
+    @include media("<=480px") {
+    }
+  }
+}

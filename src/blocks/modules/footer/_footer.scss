@@ -1,0 +1,108 @@
+.footer {
+  background-color: $brown;
+  &__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 35px;
+      margin-bottom: 12px;
+    }
+    @include media("<=768px") {
+      justify-content: flex-start;
+      margin-bottom: 28px;
+      column-gap: 40px;
+    }
+    @include media("<=480px") {
+      column-gap: 27px;
+    }
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    line-height: 125%;
+    color: #ffffff;
+    white-space: nowrap;
+    @include media("<=1200px") {
+      font-size: 1.4rem;
+    }
+    @include media("<=991px") {
+      flex: 0 1 auto;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    @include media("<=768px") {
+      text-align: left;
+    }
+    @include media("<=480px") {
+    }
+    &:not(:last-child) {
+    }
+  }
+
+  &__bottom {
+    @include media("<=768px") {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include media("<=480px") {
+      display: block;
+    }
+  }
+
+  &__patent {
+    margin-bottom: 4px;
+    font-size: 1.6rem;
+    line-height: 125%;
+    text-align: center;
+    color: #ffffff;
+    @include media("<=1200px") {
+      margin-bottom: 6px;
+      font-size: 1.4rem;
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+      margin-bottom: 0;
+    }
+    @include media("<=480px") {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__offer {
+    font-size: 1.4rem;
+    line-height: 125%;
+    text-align: center;
+    color: #ffffff;
+    @include media("<=1200px") {
+      font-size: 1.2rem;
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+}

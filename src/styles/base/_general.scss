@@ -24,6 +24,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 img {
@@ -77,6 +78,34 @@ input {
   @include media("<=991px") {
   }
   @include media("<=768px") {
+  }
+}
+
+.ui-link {
+  display: inline-flex;
+  align-items: center;
+  
+  font-size: 1.6rem;
+  line-height: 120%;
+
+  @include media("<=1200px") {
+    font-size: 1.4rem;
+  }
+  @include media("<=991px") {
+  }
+  @include media("<=768px") {
+  }
+  @include media("<=480px") {
+  }
+  
+
+  &_arrow {
+    img {
+      margin-left: 4px;
+    }
+  }
+  &_accent {
+    color: $accent;
   }
 }
 
@@ -282,6 +311,17 @@ input {
     border-radius: 10px;
 
     background-color: $accent;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $accentHover;
+    }
+
+    &:focus {
+      background-color: $accentFocus;
+    }
+
     @include media("<=1200px") {
       width: 44px;
       height: 44px;
@@ -312,7 +352,7 @@ input {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background-color: $accent;  
+      background-color: $accent;
       margin-left: 12px;
       width: 24px;
       height: 24px;
@@ -346,16 +386,46 @@ input {
       font-size: 1.4rem;
     }
   }
+
+  &_menu {
+    min-height: 34px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 6px;
+
+    font-size: 1.4rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #ffffff;
+    background-color: transparent;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $accentHover;
+    }
+
+    &:focus {
+      background-color: $accentFocus;
+    }
+
+    &.active {
+      background-color: $accent;
+    }
+  }
 }
 
 .container {
   max-width: calc(1200px + 48px);
   margin-left: auto;
   margin-right: auto;
-  padding: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
   @include media("<=desktop") {
   }
   @include media("<=tablet") {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

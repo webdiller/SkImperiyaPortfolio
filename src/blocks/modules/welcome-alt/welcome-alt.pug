@@ -1,0 +1,33 @@
+.welcome-alt
+  picture.welcome-alt__picture
+    source(media='(max-width: 320px)', srcset='./img/img02_320.webp')
+    source(media='(max-width: 320px)', srcset='./img/img02_320.png')
+
+    source(media='(max-width: 480px)', srcset='./img/img02_480.webp')
+    source(media='(max-width: 480px)', srcset='./img/img02_480.png')
+
+    source(media='(max-width: 768px)', srcset='./img/img02_768.webp')
+    source(media='(max-width: 768px)', srcset='./img/img02_768.png')
+
+    source(media='(max-width: 1024px)', srcset='./img/img02_1024.webp')
+    source(media='(max-width: 1024px)', srcset='./img/img02_1024.png')
+
+    source(srcset='./img/img02_1920.webp')
+    img(src='./img/img02_1920.png').welcome-alt__img
+
+  div.container.welcome-alt__form
+    form.welcome-alt__form-wrapper
+      .welcome-alt__form-content
+        p.welcome-alt__form-title Напишите сильный призыв к действию 
+        p.welcome-alt__form-description Раскройте подробности призыва к действию, для ясности
+      .welcome-alt__form-actions
+        .welcome-alt__form-inputs
+          .ui-group.welcome-alt__form-group
+            label(for="welcomeName").ui-group__label Ваше имя
+            input(id="welcomeName" placeholder="Имя").ui-group__input
+          .ui-group.welcome-alt__form-group
+            label(for="welcomePhone").ui-group__label Ваш телефон
+            input(id="welcomePhone" type="number" placeholder="+7 (___) ___-__-__").ui-group__input
+        .welcome-alt__form-rules 
+          p.welcome-alt__form-rules-text Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных, а так же с политикой конфиденциальностит
+          button.ui-btn.ui-btn_accent.welcome-alt__form-rulels-submit Получить консультацию

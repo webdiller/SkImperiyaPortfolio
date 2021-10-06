@@ -1,4 +1,4 @@
-header.header-top
+header.header-top.js-header-top
   div.container.header-top__container
 
     p.header-top__text 
@@ -19,5 +19,19 @@ header.header-top
         a.header-top__socials-item
           img.header-top__socials-item-img(src="./img/svg/yt.svg" alt="Мы в соцсетях")
 
-    button.header-top__menu-trigger
-      img(src="./img/svg/ico-menu.svg" alt="Открыть меню")
+    button.header-top__menu-trigger.js-header-top-menu-trigger
+      img(src="./img/svg/ico-menu.svg" alt="Открыть меню").header-top__menu-trigger-open
+      img(src="./img/svg/ico-menu-close.svg" alt="Закрыть меню").header-top__menu-trigger-close
+
+  nav.header-top__menu.js-header-top-menu 
+    .header-top__menu-container
+      a.ui-btn.ui-btn_menu.header-top__menu-item.active(href="#") Главная
+      a.ui-btn.ui-btn_menu.header-top__menu-item(href="#") Бани
+      a.ui-btn.ui-btn_menu.header-top__menu-item(href="#") Дом из бруса
+      a.ui-btn.ui-btn_menu.header-top__menu-item(href="#") Каркасные дома
+      a.ui-btn.ui-btn_menu.header-top__menu-item(href="#") О компании
+      a.ui-btn.ui-btn_menu.header-top__menu-item(href="#") Отзывы
+      a.ui-btn.ui-btn_menu.header-top__menu-item(href="#") Фотогалерея
+      a.ui-btn.ui-btn_menu.header-top__menu-item(href="#") Видеогалерея
+      a.ui-btn.ui-btn_menu.header-top__menu-item(href="#") Контакы
+    

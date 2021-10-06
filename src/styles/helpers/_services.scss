@@ -6,10 +6,10 @@
   }
 }
 
-.show-576 {
+.show-inline-flex-576 {
   display: none !important;
   @include media("<=576px") {
-    display: inline-block !important;
+    display: inline-flex !important;
   }
 }
 
@@ -24,5 +24,12 @@
   display: none !important;
   @include media("<=768px") {
     display: inline-block !important;
+  }
+}
+
+.show-inline-flex-768 {
+  display: none !important;
+  @include media("<=768px") {
+    display: inline-flex !important;
   }
 }

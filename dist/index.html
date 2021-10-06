@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
   <body>
-    <header class="header-top">
+    <header class="header-top js-header-top">
       <div class="container header-top__container">
         <p class="header-top__text"> <span class="hide-768">Строительство каркасных и брусовых домов, бань по всей России</span><span class="show-768">Строительная компания «Империя»</span></p>
         <div class="header-top__email">
@@ -36,8 +36,11 @@
           <p class="header-top__socials-title">Мы в социальных сетях:</p>
           <nav class="header-top__socials-items"> <a class="header-top__socials-item"><img class="header-top__socials-item-img" src="./img/svg/in.svg" alt="Мы в соцсетях"></a><a class="header-top__socials-item"><img class="header-top__socials-item-img" src="./img/svg/vk.svg" alt="Мы в соцсетях"></a><a class="header-top__socials-item"><img class="header-top__socials-item-img" src="./img/svg/yt.svg" alt="Мы в соцсетях"></a></nav>
         </div>
-        <button class="header-top__menu-trigger"><img src="./img/svg/ico-menu.svg" alt="Открыть меню"></button>
+        <button class="header-top__menu-trigger js-header-top-menu-trigger"><img class="header-top__menu-trigger-open" src="./img/svg/ico-menu.svg" alt="Открыть меню"><img class="header-top__menu-trigger-close" src="./img/svg/ico-menu-close.svg" alt="Закрыть меню"></button>
       </div>
+      <nav class="header-top__menu js-header-top-menu"> 
+        <div class="header-top__menu-container"><a class="ui-btn ui-btn_menu header-top__menu-item active" href="#">Главная</a><a class="ui-btn ui-btn_menu header-top__menu-item" href="#">Бани</a><a class="ui-btn ui-btn_menu header-top__menu-item" href="#">Дом из бруса</a><a class="ui-btn ui-btn_menu header-top__menu-item" href="#">Каркасные дома</a><a class="ui-btn ui-btn_menu header-top__menu-item" href="#">О компании</a><a class="ui-btn ui-btn_menu header-top__menu-item" href="#">Отзывы</a><a class="ui-btn ui-btn_menu header-top__menu-item" href="#">Фотогалерея</a><a class="ui-btn ui-btn_menu header-top__menu-item" href="#">Видеогалерея</a><a class="ui-btn ui-btn_menu header-top__menu-item" href="#">Контакы</a></div>
+      </nav>
     </header>
     <div class="header-middle">
       <div class="container header-middle__container">
@@ -279,7 +282,83 @@
         </div>
       </div>
     </div>
+    <div class="about">
+      <div class="container about__container">
+        <picture class="about__picture"> 
+          <source media="(max-width: 320px)" srcset="./img/img01_320.png">
+          <source media="(max-width: 320px)" srcset="./img/img01_320.webp">
+          <source media="(max-width: 480px)" srcset="./img/img01_480.png">
+          <source media="(max-width: 480px)" srcset="./img/img01_480.webp">
+          <source media="(max-width: 768px)" srcset="./img/img01_768.png">
+          <source media="(max-width: 768px)" srcset="./img/img01_768.webp">
+          <source media="(max-width: 1024px)" srcset="./img/img01_1024.png">
+          <source media="(max-width: 1024px)" srcset="./img/img01_1024.webp">
+          <source srcset="./img/img01_1920.webp"><img class="about__img" src="./img/img01_1920.png" alt="Что такое дача Плюс?">
+        </picture>
+        <div class="about__content">
+          <p class="about__content-title">Что такое дача Плюс?</p>
+          <div class="about__content-texts">
+            <p class="about__content-text">
+               В своём стремлении улучшить пользовательский опыт мы упускаем, что явные признаки победы институционализации разоблачены. Значимость этих проблем настолько очевидна, что существующая теория требует от нас анализа поэтапного и последовательного развития общества. <br><br>Принимая во внимание показатели успешности, базовый вектор развития представляет собой интересный эксперимент проверки экспериментов, поражающих по своей масштабности и грандиозности.<br><br>Каждый из нас понимает очевидную вещь: высококачественный прототип будущего проекта, в своём классическом представлении, допускает внедрение позиций, занимаемых участниками в отношении поставленных задач!<br><br>Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня предполагает независимые способы реализации приоритизации разума над эмоциями.<br><br>Вот вам яркий пример современных тенденций - убеждённость некоторых оппонентов предопределяет высокую востребованность экономической целесообразности принимаемых решений. Как принято считать, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены.</p>
+          </div><a class="hide-768 ui-link ui-link_accent ui-link_arrow about__content-link" href="#">Читать далее<img src="./img/svg/icon-arrow-right-orange.svg" alt="Читать далее"></a>
+          <button class="show-inline-flex-768 ui-btn ui-btn_arrow about__show-more-btn">Показать еще<span>   <img src="./img/svg/icon-arrow.svg" alt="Показать еще иконка"></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="complectations">
+      <div class="container complectations__container"> 
+        <p class="complectations__title">Комплектация каркасного дома Дача Плюс</p>
+        <div class="complectations__table-container">
+          <div class="complectations__table">
+            <div class="complectations__header">
+              <div class="complectations__col">Деталь конструкции</div>
+              <div class="complectations__col">Параметры</div>
+              <div class="complectations__col">Способ монтажа</div>
+            </div>
+            <div class="complectations__middle">Основание</div>
+            <div class="complectations__body">
+              <div class="complectations__body-row">  
+                <div class="complectations__col complectations__col_inner">Обвязочный венец</div>
+                <div class="complectations__col complectations__col_inner">Двойной. 1. Брус 100х150мм., на ребро. 2. Торцевая доска 40х150мм., на ребро.</div>
+                <div class="complectations__col complectations__col_inner">Гидроизоляция фундамента рубероид в два слоя. Крепления обвязки к фундаменту анкерными болтами. Между первым и вторым рядом прокладывается джут.</div>
+              </div>
+              <div class="complectations__body-row">  
+                <div class="complectations__col complectations__col_inner">Опорные балки</div>
+                <div class="complectations__col complectations__col_inner">Брус 100х150мм., на ребро.</div>
+                <div class="complectations__col complectations__col_inner">Гидроизоляция фундамента рубероид в два слоя. Крепления к фундаменту анкерными болтами.</div>
+              </div>
+              <div class="complectations__body-row">  
+                <div class="complectations__col complectations__col_inner">Лаги</div>
+                <div class="complectations__col complectations__col_inner">Доска 40х150мм.</div>
+                <div class="complectations__col complectations__col_inner">Шаг лаг 59см. В больших пролетах лаги через 30см. или сдвоенные, по усмотрению компании. Монтируются на металлические гвозди</div>
+              </div>
+              <div class="complectations__body-row">  
+                <div class="complectations__col complectations__col_inner">Черепной брусок</div>
+                <div class="complectations__col complectations__col_inner">Брусок 40х50мм.</div>
+                <div class="complectations__col complectations__col_inner">Монтируются к лагам на металлические гвозди.</div>
+              </div>
+              <div class="complectations__body-row">  
+                <div class="complectations__col complectations__col_inner">Пол черновой</div>
+                <div class="complectations__col complectations__col_inner">Обрезная доска 22х100мм</div>
+                <div class="complectations__col complectations__col_inner">Доска укладывается сплошняком, вдоль лаг по всей длине пола.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="complectations__footer">
+          <button class="ui-btn ui-btn_arrow complectations__show-more-btn">Показать еще<span>   <img src="./img/svg/icon-arrow.svg" alt="Показать еще иконка"></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container footer__container">
+        <nav class="footer__items"><a class="footer__item" href="#">Главная</a><a class="footer__item" href="#">Бани</a><a class="footer__item" href="#">Дома из бруса</a><a class="footer__item" href="#">Каркасные дома</a><a class="footer__item" href="#">Контакты</a><a class="footer__item" href="#">Отзывы</a><a class="footer__item" href="#">Фотогаллерея</a><a class="footer__item" href="#">Видеогаллерея</a><a class="footer__item" href="#">О компании</a></nav>
+        <div class="footer__bottom">
+          <p class="footer__patent">© ООО "СК-Империя" 2011-2021</p>
+          <p class="footer__offer">не является публичной офертой </p>
+        </div>
+      </div>
+    </div>
     <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
   </body>
 </html>
