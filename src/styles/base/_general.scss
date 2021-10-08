@@ -118,6 +118,9 @@ input {
   transition: all 0.3s ease;
   font-size: 1.6rem;
   outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   &::placeholder {
     font-style: normal;
     font-weight: normal;
@@ -170,6 +173,9 @@ input {
     border: 1px solid transparent;
     outline: none;
     border-radius: 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 
     color: #a0a0a0;
     background-color: #f8f8f8;
