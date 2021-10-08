@@ -7,6 +7,39 @@
     @include media("<=768px") {
       flex-direction: column;
     }
+    &.active {
+      flex-wrap: wrap;
+      .header-middle__left {
+        margin-right: 0;
+        margin-bottom: 20px;
+        flex: 1 1 100%;
+      }
+      .header-middle__search-input {
+        display: inline-flex;
+        flex-basis: 1;
+        max-width: unset;
+        margin-right: 12px;
+      }
+      .header-middle__right {
+        flex: 1 1 100%;
+      }
+      .header-middle__right-btn {
+        flex: 1;
+      }
+      @include media("<=768px") {
+        .header-middle__left {
+          margin-right: 0;
+          width: 100%;
+          flex: 1;
+          flex-wrap: wrap;
+          margin-bottom: 16px;
+        }
+        .header-middle__search {
+          flex: 1 1 100%;
+          margin-top: 16px;
+        }
+      }
+    }
   }
 
   &__left {
@@ -26,7 +59,7 @@
       margin-right: 0;
       margin-bottom: 24px;
       width: 100%;
-      flex-basis: 1;
+      flex: 1;
     }
     @include media("<=480px") {
       flex-direction: right;

@@ -1,13 +1,12 @@
 .complectations {
-  margin-bottom: 230px;
+  margin-bottom: 40px;
   @include media("<=1200px") {
-    margin-bottom: 150px;
+    margin-bottom: 48px;
   }
   @include media("<=991px") {
-    margin-bottom: 115px;
   }
   @include media("<=768px") {
-    margin-bottom: 100px;
+    margin-bottom: 32px;
   }
   @include media("<=480px") {
   }
@@ -46,6 +45,7 @@
   }
 
   &__table-container {
+    position: relative;
     margin-bottom: 40px;
     @include media("<=1200px") {
       margin-bottom: 32px;
@@ -55,7 +55,7 @@
 
       &::-webkit-scrollbar {
         width: 1em;
-        height: 2px;
+        height: 6px;
       }
 
       &::-webkit-scrollbar-track {
@@ -86,6 +86,20 @@
     @include media("<=768px") {
     }
     @include media("<=480px") {
+    }
+  }
+
+  &__hidden-elements {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    transition: all 0.3s ease;
+
+    &.active {
+      max-height: 100%;
+      overflow: visible;
+      opacity: 1;
     }
   }
 

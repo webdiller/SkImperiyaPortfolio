@@ -117,6 +117,18 @@
     font-size: 1.6rem;
     line-height: 150%;
     color: #000000;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 528px;
+
+    transition: all 0.3s ease;
+
+    &.active {
+      max-height: 100%;
+    }
+
     @include media("<=1200px") {
       font-size: 1.4rem;
     }
@@ -133,6 +145,7 @@
   }
 
   &__content-link {
+    @include reset-btn();
     @include media("<=1200px") {
     }
     @include media("<=991px") {

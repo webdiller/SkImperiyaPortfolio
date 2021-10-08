@@ -1,13 +1,12 @@
-modules.define('complectations', ['i-bem-dom'], function(provide, bemDom) {
+const elements = document.querySelector(".js-complectations-hidden-elements");
+const complectationsBtn = document.querySelector(
+  ".js-complectations-show-more-btn"
+);
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
+try {
+  complectationsBtn.addEventListener("click", function (e) {
+    elements.classList.add("active");
+  });
+} catch (error) {
+  console.log(error);
+}
