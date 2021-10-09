@@ -11,17 +11,7 @@ const renderElements = ({
 } = {}) => {
   const item = `
         <div class="projects__item">
-            <picture class="projects__item-picture">
-                <source media="(max-width: 320px)" srcset="./img/img03_320.jpg">
-                <source media="(max-width: 320px)" srcset="./img/img03_320.webp">
-                <source media="(max-width: 480px)" srcset="./img/img03_320.jpg">
-                <source media="(max-width: 480px)" srcset="./img/img03_320.webp">
-                <source media="(max-width: 768px)" srcset="./img/img03_320.jpg">
-                <source media="(max-width: 768px)" srcset="./img/img03_320.webp">
-                <source media="(max-width: 1024px)" srcset="./img/img03_320.jpg">
-                <source media="(max-width: 1024px)" srcset="./img/img03_320.webp">
-                <source srcset="./img/img03_320.webp"><img class="projects__item-img" src="./img/img03_320.jpg" alt="Проект лидер изображение дома">
-            </picture>
+          <img class="projects__item-img" src="./img/img03_320.jpg" alt="Проект лидер изображение дома">
             <div class="projects__item-data">
                 <div class="projects__item-top">
                 <div class="projects__item-info">
