@@ -24,16 +24,13 @@
     @include media("<=991px") {
       flex-wrap: wrap;
       justify-content: center;
-      column-gap: 35px;
       margin-bottom: 12px;
     }
     @include media("<=768px") {
       justify-content: flex-start;
       margin-bottom: 28px;
-      column-gap: 40px;
     }
     @include media("<=480px") {
-      column-gap: 27px;
     }
   }
 
@@ -56,6 +53,15 @@
     @include media("<=480px") {
     }
     &:not(:last-child) {
+      @include media("<=991px") {
+        margin-right: 35px;
+      }
+      @include media("<768px") {
+        margin-right: 40px;
+      }
+      @include media("<=480px") {
+        margin-right: 27px;
+      }
     }
   }
 
