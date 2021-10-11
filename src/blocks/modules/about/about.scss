@@ -34,28 +34,22 @@
   }
 
   &__img {
+    display: block;
     flex: 0 1 548px;
     min-width: 548px;
-    margin-right: 64px;
-    margin-left: -30px;
     @include media("<=1200px") {
       flex: 0 1 486px;
       min-width: 486px;
-      margin-right: 48px;
     }
     @include media("<=991px") {
       flex: 0 1 374px;
       min-width: 374px;
-      margin-right: 20px;
-      margin-left: -20px;
     }
     @include media("<=768px") {
       flex: 0 1 548px;
       min-width: unset;
       max-width: unset;
-      width: calc(100% + 20px);
-      margin-bottom: 32px;
-      margin-right: 0
+      width: 100%;
     }
     @include media("<=480px") {
     }
@@ -64,14 +58,16 @@
   &__content {
     display: flex;
     flex-direction: column;
+    margin-left: 64px;
     @include media("<=1200px") {
-
+      margin-left: 48px;
     }
     @include media("<=991px") {
-        
+      margin-left: 20px;
     }
     @include media("<=768px") {
-
+      margin-left: 0;
+      margin-top: 32px;
     }
     @include media("<=480px") {
 
