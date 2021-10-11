@@ -45,23 +45,19 @@
     @include media("<=991px") {
       flex: 0 1 auto;
       margin-bottom: 20px;
+      margin-right: 35px;
       text-align: center;
     }
     @include media("<=768px") {
+      margin-right: 40px;
       text-align: left;
     }
     @include media("<=480px") {
+      margin-right: 27px;
     }
-    &:not(:last-child) {
-      @include media("<=991px") {
-        margin-right: 35px;
-      }
-      @include media("<768px") {
-        margin-right: 40px;
-      }
-      @include media("<=480px") {
-        margin-right: 27px;
-      }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 
