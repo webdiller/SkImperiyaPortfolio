@@ -28,9 +28,6 @@ gulp.task("styles", () => {
             grid: true
         }))
         .pipe(mincss())
-        .pipe(rename({
-            suffix: ".min"
-        }))
         .pipe(plumber.stop())
         .pipe(gulpif(!production, sourcemaps.write("./maps/")))
         .pipe(gulp.dest(paths.styles.dist))
